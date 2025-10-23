@@ -1,0 +1,298 @@
+/* =======================
+   Global Styles
+======================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 110px; /* same as your header height + padding */
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+body {
+    min-height: 100vh;
+    cursor: default;
+    user-select: none;       /* Prevents selecting text */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+a {
+    user-select: text;
+}
+
+nav a {
+    display: inline-block;          /* Treat like a button */
+    padding: 0.5rem 1rem;           /* Vertical + horizontal padding */
+    margin: 0 0.5rem;               /* Space between buttons */
+    background-color: #f0c420;      /* Button color */
+    color: #000;                     /* Text color */
+    font-weight: bold;
+    text-decoration: none;          /* Remove underline */
+    border-radius: 0.5rem;          /* Rounded corners */
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #e0b800;      /* Darker on hover */
+    transform: translateY(-2px);    /* Slight lift effect */
+}
+
+nav a:active {
+    transform: translateY(0);       /* Reset on click */
+}
+
+/* Main */
+main {
+    flex: 1;
+    margin-top: 100px; /* header height + padding */
+    margin-bottom: 50px; /* footer height */
+}
+
+/* Scroll offset for anchors */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Hero */
+.hero {
+    background: radial-gradient(circle at center, #1a1a1a, #000);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.page-logo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(240, 196, 32, 0.5);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-top: 0.5 rem;
+    margin-bottom: 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: #f0c420;
+}
+
+/* Guild Roster Cards */
+.guild-roster {
+    color: #f0c420;
+    margin: 2rem;
+}
+
+.guild-roster h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    max-height: 400px;
+    max-width: 75%;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+.roster-card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(240,196,32,0.2);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roster-card:hover {
+    transform: scale(1.05);
+}
+
+.class-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+    border: 2px solid;
+    object-fit: cover;
+}
+
+.member-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.member-spec {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Gallery */
+.gallery {
+    color: #f0c420;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.socials {
+    padding: 2rem;
+    text-align: center;
+    background: #111;
+    margin: 2rem 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.socials h2 {
+    color: #f0c420;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #e6e6e6;
+    background-color: #1f1f1f;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(240,196,32,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-link img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(240,196,32,0.4);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lightbox .prev, .lightbox .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: #fff;
+    padding: 10px;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.lightbox .prev { left: 30px; }
+.lightbox .next { right: 30px; }
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1f1f1f;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9rem;
+    z-index: 1000;
+}
