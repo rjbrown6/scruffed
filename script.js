@@ -16,19 +16,19 @@
     };
 
     const classIcons = {
-        "Death Knight": "/static/img/icons/deathknight.png",
-        "Demon Hunter": "/static/img/icons/demonhunter.png",
-        "Druid": "/static/img/icons/druid.png",
-        "Evoker": "/static/img/icons/evoker.png",
-        "Hunter": "/static/img/icons/hunter.png",
-        "Mage": "/static/img/icons/mage.png",
-        "Monk": "/static/img/icons/monk.png",
-        "Paladin": "/static/img/icons/paladin.png",
-        "Priest": "/static/img/icons/priest.png",
-        "Rogue": "/static/img/icons/rogue.png",
-        "Shaman": "/static/img/icons/shaman.png",
-        "Warlock": "/static/img/icons/warlock.png",
-        "Warrior": "/static/img/icons/warrior.png"
+        "Death Knight": "/scruffed/static/img/icons/deathknight.png",
+        "Demon Hunter": "/scruffed/static/img/icons/demonhunter.png",
+        "Druid": "/scruffed/static/img/icons/druid.png",
+        "Evoker": "/scruffed/static/img/icons/evoker.png",
+        "Hunter": "/scruffed/static/img/icons/hunter.png",
+        "Mage": "/scruffed/static/img/icons/mage.png",
+        "Monk": "/scruffed/static/img/icons/monk.png",
+        "Paladin": "/scruffed/static/img/icons/paladin.png",
+        "Priest": "/scruffed/static/img/icons/priest.png",
+        "Rogue": "/scruffed/static/img/icons/rogue.png",
+        "Shaman": "/scruffed/static/img/icons/shaman.png",
+        "Warlock": "/scruffed/static/img/icons/warlock.png",
+        "Warrior": "/scruffed/static/img/icons/warrior.png"
     };
 
     const galleryImages = document.querySelectorAll('.gallery-img');
