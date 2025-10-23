@@ -124,11 +124,12 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     justify-content: center;
     gap: 15px;
-    padding: 10px 0;
+    padding: 10px 15px;
     max-height: 400px;
     max-width: 75%;
     overflow-y: auto;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .roster-card {
@@ -284,6 +285,13 @@ section {
 .lightbox .prev { left: 30px; }
 .lightbox .next { right: 30px; }
 
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select:non;
+    -ms-user-select: none;
+    cursor:default;
+}
 
 /* Footer */
 footer {
